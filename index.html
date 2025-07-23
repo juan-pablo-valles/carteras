@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carteras Bags</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Carteras Bags - Logo de la tienda" loading="lazy">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#productos"><i class="fas fa-shopping-bag"></i> Productos</a></li>
+                <li><a href="#cart"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+                <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Video -->
+    <section class="video-section">
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/k5G45CILUv0?si=kcQ6tT8J2tWwxJjQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Sección Contenido -->
+    <main>
+        <section id="productos" class="productos-section">
+            <h2>Últimos ingresos</h2>
+            <div class="productos-grid">
+                <!-- Los productos se cargarán dinámicamente desde productos.json -->
+                <div class="loading-products">Cargando productos...</div>
+            </div>
+        </section>
+
+        <!-- Carrito de Compras -->
+        <section id="cart" class="cart-section">
+            <h2>Carrito de Compras</h2>
+            <div class="cart-container">
+                <div class="cart-items">
+                    <!-- Aquí se mostrarán los productos agregados al carrito -->
+                </div>
+                <div class="cart-total">
+                    <h3>Total: $0.00</h3>
+                    <button class="checkout">Terminar con la compra</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="contact-form" action="https://formspree.io/f/xnndyrdw" method="POST">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Whatsapp: +54 9 11 4444-5555</p>
+                <p>Email: <a href="mailto:carteras@ecommerce.com">carteras@ecommerce.com</a></p>
+                <p>Av. Balcarce 50, C1064 Ciudad Autónoma de Buenos Aires</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8403576244573!2d-58.372881325146416!3d-34.60819815773332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352c95f0d4f5%3A0xee8dc0a5eb259e82!2sBalcarce%2050%2C%20C1064%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1747697864776!5m2!1ses-419!2sar"
+                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Carteras Bags Tienda Online 2025. Sitio diseñado y desarrollado por <a
+                    href="https://clickecom.com.ar" target="_blank">clickecom.com.ar</a></p>
+        </div>
+    </footer>
+
+</body>
+<script src="js/func.js"></script>
+</html>

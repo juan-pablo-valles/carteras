@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Maxi Bolso",
+      "price": 120000,
+      "image": "assets/images/maxi_bolso.jpg",
+      "alt": "Maxi Bolso"
+    },
+    {
+      "id": 2,
+      "name": "Cartera Midi suela",
+      "price": 90000,
+      "image": "assets/images/cartera_midi.jpg",
+      "alt": "Cartera Midi"
+    },
+    {
+      "id": 3,
+      "name": "Mochila",
+      "price": 78000,
+      "image": "assets/images/mochila.jpg",
+      "alt": "Mochila"
+    },
+    {
+      "id": 4,
+      "name": "Ruana de cashmere",
+      "price": 35000,
+      "image": "assets/images/ruana.jpg",
+      "alt": "Ruana"
+    },
+    {
+      "id": 5,
+      "name": "Bolso maternal",
+      "price": 198200,
+      "image": "assets/images/bolso_maternal.jpg",
+      "alt": "Bolso maternal"
+    },
+    {
+      "id": 6,
+      "name": "Sombrero",
+      "price": 30000,
+      "image": "assets/images/sombrero.jpg",
+      "alt": "Sombrero"
+    }
+  ]
+}
