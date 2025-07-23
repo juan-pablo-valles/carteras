@@ -471,6 +471,163 @@ h3 {
     line-height: 1.6;
 }
 
+/* Estilos para la sección de Reseñas */
+.resenas-section {
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.resenas-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.nueva-resena, .lista-resenas {
+    flex: 1;
+    min-width: 300px;
+}
+
+.nueva-resena {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.nueva-resena h3, .lista-resenas h3 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eee;
+}
+
+#resena-form .form-group {
+    margin-bottom: 1.2rem;
+}
+
+#resena-form input[type="text"],
+#resena-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+#resena-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#resena-form input[type="text"]:focus,
+#resena-form textarea:focus {
+    border-color: #999;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.estrellas {
+    display: flex;
+    gap: 5px;
+    margin: 0.5rem 0 1rem;
+}
+
+.estrellas i {
+    color: #ddd;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.estrellas i.seleccionada,
+.estrellas i:hover,
+.estrellas i:hover ~ i {
+    color: #ffd700;
+}
+
+#resena-form button[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#resena-form button[type="submit"]:hover {
+    background-color: #ff4444;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.2);
+}
+
+.lista-resenas {
+    margin-top: 2rem;
+}
+
+.resena-item {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resena-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.resena-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.resena-nombre {
+    font-weight: 600;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.resena-fecha {
+    color: #888;
+    font-size: 0.85rem;
+}
+
+.resena-calificacion {
+    color: #ffd700;
+    margin: 0.5rem 0;
+}
+
+.resena-comentario {
+    color: #555;
+    line-height: 1.6;
+    margin-top: 0.5rem;
+}
+
+.sin-resenas {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    padding: 2rem 0;
+}
+
 /* Media queries para diseño responsivo */
 @media (max-width: 900px) {
     .producto-card {
